@@ -30,6 +30,8 @@ target_link_libraries(suntaskq
 	pthread
 )
 
+include_directories(include)
+
 install(TARGETS suntaskq DESTINATION lib
 	PERMISSIONS OWNER_READ OWNER_WRITE GROUP_READ WORLD_READ)
 install(FILES	include/suntaskq.h
